@@ -1,8 +1,7 @@
-﻿namespace MWF_Web_Api.Models
+﻿namespace MWF_Web_Api.Models;
+
+public enum ImageExtension
 {
-    public enum ImageExtension
-    {
-        jpg = 0,
-        png = 1,
-    }
+    jpg = 0,
+    png = 1,
 }
