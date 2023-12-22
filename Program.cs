@@ -1,4 +1,6 @@
 
+using MWF_Web_Api.Services;
+
 namespace MWF_Web_Api
 {
     public class Program
@@ -13,6 +15,8 @@ namespace MWF_Web_Api
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddSingleton<ImagesService>();
 
             var app = builder.Build();
 
